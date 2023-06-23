@@ -3,7 +3,10 @@ import { Text } from 'react-native';
 
 export default function TextField({ children, style }) {
     const textStyle = {
-        fontFamily: style?.fontWeight === "bold" ? 'MontserratBold' : 'MontserratRegular',
+        fontFamily:
+            style?.fontWeight === 'bold'
+                ? 'MontserratBold'
+                : 'MontserratRegular',
         ...style,
     };
 

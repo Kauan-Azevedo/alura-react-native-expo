@@ -1,13 +1,13 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, View } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 import Cart from './src/pages/Cart';
 import {
     useFonts,
     Montserrat_400Regular,
     Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
-import mock from "./src/mocks/cart.js"
-import AppLoading from "expo-app-loading"
+import mock from './src/mocks/cart.js';
+import AppLoading from 'expo-app-loading';
 
 export default function App() {
     const [loadFont] = useFonts({
@@ -20,7 +20,7 @@ export default function App() {
     }
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{ flex: 1 }}>
             <StatusBar />
             <Cart {...mock} />
         </SafeAreaView>
